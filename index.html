@@ -13,11 +13,27 @@
 
 <body>
 
+    <!-- Info on slide -->
+    <section id="top">
+        <div>
+            <h2>Welcome to Zippy</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis delectus quia hic odio illum sunt
+                aut
+                incidunt nam vel numquam molestias ratione ad cupiditate dicta dolorum, accusantium, commodi, nisi
+                blanditiis.
+            </p>
+            <div style="margin-top: 25px;margin-bottom: 25px;">
+                <a class="slide-btn" href="#">Learn <span>More</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- Info on slide End -->
 
+    <!-- Navigation Bar -->
     <section id="nav">
-        <nav class="navbar" id="top">
+        <nav class="navbar">
             <ul class="nav-list">
-                <li id="brand"><a href="#top">ZIPPY</a></li>
+                <li id="brand"><a href="#nav">ZIPPY</a></li>
                 <li><a href="#welcome">HOME</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#pricing">PRICING</a></li>
@@ -261,13 +277,13 @@
             <div>
                 <video class="video" id="vid1" src="video2.mp4" loop></video>
             </div>
-            <div style="text-align: center;">Ideation (Creative Process)</div>
+            <div style="text-align: center; padding: 30px;">Ideation (Creative Process)</div>
         </div>
         <div class="video-column">
             <div>
                 <video class="video" id="vid2" src="video1.mp4" loop></video>
             </div>
-            <div style="text-align: center;">Virtual Reality (VR)</div>
+            <div style="text-align: center; padding: 30px;">Virtual Reality (VR)</div>
         </div>
     </section>
     <!-- Video Projects Section Ends -->
@@ -375,9 +391,99 @@
     </section>
     <!-- Team Section Ends -->
 
+    <!-- Life in Zippy Section -->
     <section id="life-in-zippy">
         <div class="sections">Life in Zippy</div>
+
+        <div class="gallery">
+            <div class="work-life">
+                <img src="l1.jpg">
+            </div>
+
+            <div class="work-life">
+                <img src="l2.jpg">
+            </div>
+
+            <div class="work-life">
+                <img src="l3.jpg">
+            </div>
+
+            <div class="work-life">
+                <img src="l4.jpg">
+            </div>
+
+            <div class="work-life">
+                <img src="l5.jpg">
+            </div>
+
+            <div class="work-life">
+                <img src="l6.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="l1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="l2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="l3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="l4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="l5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="l6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- Life In Zippy Section Ends -->
+
+    <!-- Newsletter Sign-Up Section-->
+    <section id="newsletter">
+        <div class="newsletter">
+            <img src="newsletter.jpg" alt="">
+            <div class="details">
+                <h2>Newsletter <span>Sign-Up</span></h2>
+                <p>
+                    <input class="email" type="text" name="Email-Id" id="" placeholder="E-mail ID"
+                        style="width: 255px; height: 35px;border-radius: 5px;">
+                    <button href="" class="signup-btn">Sign-Up</button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Sign-Up Section Ends -->
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="sections" style="margin: 40px;">Blog</div>
+
+        <div class="blog-columns">
+            <img src="b1.jpg" alt="">
+        </div>
+
+        <div class="blog-columns">
+            <img src="b2.jpg" alt="">
+
+        </div>
+
+        <div class="blog-columns">
+            <img src="b3.jpg" alt="">
+
+        </div>
+
+
+    </section>
+
 
     <script src="script.js"></script>
 

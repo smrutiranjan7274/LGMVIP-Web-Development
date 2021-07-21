@@ -27,6 +27,43 @@ section {
     height: auto;
 }
 
+#top {
+    padding: 5% 10% 5% 10%;
+    background: rgba(0, 0, 0, 0.658);
+    z-index: 2;
+    margin-top: 150px;
+    align-content: center;
+}
+
+#top h2 {
+    font-weight: bolder;
+    color: #ff0062;
+}
+
+#top p {
+    font-weight: bold;
+    text-align: justify;
+    color: #ffff;
+}
+
+.slide-btn {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.slide-btn:hover {
+    opacity: 0.9;
+}
+
+span {
+    font-weight: 900;
+}
 
 /* CSS for Navbar */
 #nav {
@@ -35,6 +72,7 @@ section {
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -126,10 +164,6 @@ section {
     background: rgba(255, 255, 255, 0.6);
 }
 
-input[type='radio']:checked::after {
-    background-color: #ffffff;
-    visibility: visible;
-}
 
 #radio1:checked~.first {
     margin-left: 0;
@@ -193,12 +227,14 @@ input[type='radio']:checked::after {
 
 #welcome {
     margin-top: 585px;
-    padding-top: 30px;
+    padding-top: 110px;
+    height: 1045px;
 }
 
 #projects {
-    margin-top: 1535px;
-    padding-top: 30px;
+    margin-top: 1630px;
+    padding-top: 110px;
+    height: 560px;
 }
 
 
@@ -414,8 +450,8 @@ input[type='radio']:checked::after {
 
 /* Pricing Secton */
 #pricing {
-    margin-top: 1990px;
-    padding: 30px;
+    margin-top: 2190px;
+    padding: 110px;
 }
 
 .columns {
@@ -471,8 +507,8 @@ input[type='radio']:checked::after {
 
 /* Video Projects */
 #video-projects {
-    margin-top: 2485px;
-    padding: 30px;
+    margin-top: 2800px;
+    padding: 30px 30px 60px 30px;
     color: #fff;
     background: #944da0;
 }
@@ -494,8 +530,8 @@ input[type='radio']:checked::after {
 
 /* Team */
 #team {
-    margin-top: 2935px;
-    padding: 60px;
+    margin-top: 3350px;
+    padding: 100px 60px 30px 60px;
 }
 
 .team-column {
@@ -560,8 +596,205 @@ input[type='radio']:checked::after {
 
 /* Life in Zippy */
 #life-in-zippy {
-    width: 1081px;
-    margin-top: 3745px;
-    padding: 30px;
+    width: 1080px;
+    margin-top: 4170px;
+    padding: 110px;
     background: rgb(172, 172, 172);
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery {
+    position: relative;
+}
+
+.gallery .work-life img {
+    vertical-align: middle;
+}
+
+/* Hide the images by default */
+.work-life {
+    display: none;
+}
+
+.work-life img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row {
+    height: 100px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    height: 100px;
+}
+
+.column img {
+    width: 100%;
+    height: 100px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* Newsletter Section */
+#newsletter {
+    margin-top: 5155px;
+    height: 390px;
+    background: #000;
+}
+
+.newsletter {
+    background: #000000;
+    position: relative;
+    flex: 1;
+    height: 320px;
+    overflow: hidden;
+}
+
+.newsletter img {
+    opacity: 0.5;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter:hover img {
+    opacity: .2;
+}
+
+.newsletter .details {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter .details h2 {
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 165px;
+    transition: 0.6s;
+    transition-property: transform;
+}
+
+.newsletter .details h2 span {
+    font-weight: 900;
+}
+
+.newsletter:hover .details h2 {
+    transform: translateY(-70px);
+}
+
+.newsletter .details p {
+    margin: 30px 30px 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+
+.newsletter:hover .details p {
+    opacity: 1;
+    transform: translateY(-70px);
+}
+
+.email {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.signup-btn {
+    border: none;
+    background-image: linear-gradient(to bottom right, #8A2387, #E94057, #F27121);
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    height: 35px;
+    width: 90px;
+}
+
+.signup-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Blog Section */
+#blog {
+    margin-top: 5480px;
+}
+
+.blog-columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.blog-columns img {
+    width: 100%;
 }

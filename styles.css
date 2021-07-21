@@ -538,6 +538,11 @@ input[type='radio']:checked::after {
     width: 100%;
 }
 
+.imageBox .imageInn img {
+    border-radius: 50%;
+    width: 69%;
+}
+
 .imageBox .hoverImg {
     position: absolute;
     left: 0;
@@ -556,7 +561,7 @@ input[type='radio']:checked::after {
 /* Life in Zippy */
 #life-in-zippy {
     width: 1081px;
-    margin-top: 3775px;
+    margin-top: 3745px;
     padding: 30px;
     background: rgb(172, 172, 172);
 }

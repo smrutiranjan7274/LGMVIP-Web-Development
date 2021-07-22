@@ -63,3 +63,12 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+// For Google Map
+function myMap() {
+  var mapProp = {
+    center: new google.maps.LatLng(20.295789712650425, 85.82384761330974),
+    zoom: 10,
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}

@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="website.png" type="image/x-icon">
-    <title>Task-1</title>
 
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="website.png" type="image/x-icon">
+
+    <!-- Title -->
+    <title>Task-1</title>
 </head>
+<!-- Head Ends -->
+
+<!-- Body -->
 
 <body>
 
@@ -23,7 +33,7 @@
                 blanditiis.
             </p>
             <div style="margin-top: 25px;margin-bottom: 25px;">
-                <a class="slide-btn" href="#">Learn <span>More</span></a>
+                <button class="slide-btn" href="#">Learn <span>More</span></button>
             </div>
         </div>
     </section>
@@ -164,6 +174,8 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="sections">Projects</div>
+
+        <!-- Project Card -->
         <div class="project-cards">
             <div class="image-p">
                 <img src="1p.jpg" alt="">
@@ -226,6 +238,7 @@
                 </div>
             </div>
         </div>
+        <!-- Project Card Ends -->
     </section>
     <!-- Projects Section Ends -->
 
@@ -388,6 +401,8 @@
                 <h1>Senior <span>Designer</span></h1>
             </div>
         </div>
+        <!-- Image Cards Ends -->
+
     </section>
     <!-- Team Section Ends -->
 
@@ -395,6 +410,7 @@
     <section id="life-in-zippy">
         <div class="sections">Life in Zippy</div>
 
+        <!-- Gallery -->
         <div class="gallery">
             <div class="work-life">
                 <img src="l1.jpg">
@@ -444,6 +460,8 @@
                 </div>
             </div>
         </div>
+        <!-- Gallery Ends -->
+
     </section>
     <!-- Life In Zippy Section Ends -->
 
@@ -454,8 +472,7 @@
             <div class="details">
                 <h2>Newsletter <span>Sign-Up</span></h2>
                 <p>
-                    <input class="email" type="text" name="Email-Id" id="" placeholder="E-mail ID"
-                        style="width: 255px; height: 35px;border-radius: 5px;">
+                    <input class="email" type="text" name="Email-Id" id="" placeholder="E-mail Address">
                     <button href="" class="signup-btn">Sign-Up</button>
                 </p>
             </div>
@@ -465,28 +482,158 @@
 
     <!-- Blog Section -->
     <section id="blog">
-        <div class="sections" style="margin: 40px;">Blog</div>
+        <div class="sections" style="margin: 40px; padding-top: 50px;">Blog</div>
+        <div class="blog-rows">
+            <div class="blog-columns">
+                <img src="b1.jpg" alt="">
+                <div class="date">
+                    <span>10th July, 2020</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laudantium fugiat minima sed facere pariatur dolorem
+                    provident blanditiis hic explicabo eveniet? Lorem ipsum dolor sit amet.
+                </p>
+            </div>
 
-        <div class="blog-columns">
-            <img src="b1.jpg" alt="">
+            <div class="vl" style="margin-left: 311px;"></div>
+
+            <div class="blog-columns">
+                <img src="b2.jpg" alt="">
+                <div class="date">
+                    <span>12th August, 2020</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laudantium fugiat minima sed facere pariatur dolorem
+                    provident blanditiis hic explicabo eveniet? Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+
+            <div class="vl" style="margin-left: 622px;"></div>
+
+            <div class="blog-columns">
+                <img src="b3.jpg" alt="">
+                <div class="date">
+                    <span>30th Feb, 2021</span>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laudantium fugiat minima sed facere pariatur dolorem
+                    provident blanditiis hic explicabo eveniet? Lorem ipsum dolor sit amet.
+                </p>
+            </div>
         </div>
-
-        <div class="blog-columns">
-            <img src="b2.jpg" alt="">
-
-        </div>
-
-        <div class="blog-columns">
-            <img src="b3.jpg" alt="">
-
-        </div>
-
 
     </section>
+    <!-- Blog Section Ends -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <!-- Map -->
+        <div class="contact-column">
+            <div class="map" id="googleMap"></div>
+        </div>
+        <!-- Map Ends -->
+
+        <!-- Contact Form -->
+        <div class="contact-column">
+            <form action="" class="contact-form">
+                <h1 class="form-title">Contact</h1>
+                <div class="form">
+                    <input class="form-detail" type="text" name="Name" id="name" placeholder="NAME">
+                </div>
+
+                <div class="form">
+                    <input class="form-detail" type="email" name="Email" id="email" placeholder="EMAIL ADDRESS">
+                </div>
+
+                <div class="form">
+                    <input class="form-detail" type="text" name="Subject" id="subject" placeholder="SUBJECT">
+                </div>
+
+                <div class="form">
+                    <textarea class="msg" name="Message" id="message" placeholder="YOUR MESSAGE HERE"></textarea>
+                </div>
+
+                <div class="form">
+                    <button class="send-btn">SEND</button>
+                </div>
+            </form>
+        </div>
+        <!-- Contact Form Ends -->
+
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- Footer -->
+    <section class="footer">
+
+        <!-- Address Column -->
+        <div class="footer-column">
+            <div class="footer-detail">
+                Office Address
+            </div>
+            <address>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ea, fuga id eveniet sunt doloribus nostrum
+            </address>
+        </div>
+        <!-- Address Column Ends -->
 
 
+        <!-- Follow Us Column -->
+        <div class="footer-column">
+            <div class="footer-detail" style="text-align: center;">
+                Follow Us
+            </div>
+            <div style="height: 69.6px;padding: 20px;">
+                <div class="follow-column">
+                    <a href="https://github.com/smrutiranjan7274" target="_blank">
+                        <img class="follow-us" src="github.png" alt=""></a>
+                </div>
+                <div class="follow-column">
+                    <a href="https://instagram.com/s.bhanja" target="_blank">
+                        <img class="follow-us" src="instagram.png" alt=""></a>
+                </div>
+                <div class="follow-column">
+                    <a href="https://twitter.com/sr_bhanja" target="_blank"><img class="follow-us" src="twitter.png"
+                            alt=""></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Follow Us Column Ends -->
+
+        <!-- Contact Us Column -->
+        <div class="footer-column">
+            <div class="footer-detail" style="text-align: center;">
+                Contact Us
+            </div>
+            <div style="text-align: center;">
+                <a href="mailto:xyz@gmail.com" style="text-decoration: none; color: black; font-weight: 500;">
+                    <!-- Optional Image -->
+                    <!-- <img src="gmail.png" alt="" style="width: 10px;"> -->
+                    contact@zippy.com
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="tel: 1234567890" style="text-decoration: none; color: black; font-weight: 500;">
+                    Phone: +12 345-678-9012
+                </a>
+            </div>
+
+        </div>
+        <!-- Contact Us Column Ends -->
+    </section>
+    <!-- Footer Ends -->
+
+    <!-- JavaScript File -->
     <script src="script.js"></script>
+    <!-- Google Map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxo801nwBotwJktiUa5O3LXZi4AZICL88&callback=myMap">
+    </script>
 
 </body>
+<!-- Body Ends -->
 
 </html>

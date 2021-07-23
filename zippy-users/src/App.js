@@ -30,7 +30,7 @@ function App() {
           <div class="topnav" id="myTopnav">
             <a
               rel="noreferrer"
-              href="https://bit.ly/36YlVAu"
+              href="https://srblgmvipt1.netlify.app"
               target="_blank"
               class="active"
             >

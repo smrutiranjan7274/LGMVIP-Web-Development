@@ -28,7 +28,12 @@ function App() {
       <Router>
         <section className="wholecontainer">
           <div class="topnav" id="myTopnav">
-            <a href="#" class="active">
+            <a
+              rel="noreferrer"
+              href="https://bit.ly/36YlVAu"
+              target="_blank"
+              class="active"
+            >
               ZIPPY
             </a>
             <a href="#getusers" class="btn" onClick={handleClick}>

@@ -580,22 +580,25 @@ span {
 .imageBox .imageInn img {
     border-radius: 50%;
     width: 69%;
+    transition: 0.5s;
 }
 
 .imageBox .hoverImg {
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
+    opacity: 0;
     width: 100%;
+    transition: 0.5s;
 }
 
 .imageBox:hover .hoverImg {
-    display: block;
-    transition: 0.5s ease-out;
-
+    opacity: 1;
 }
 
+.imageBox:hover .imageInn img {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
 
 /* Life in Zippy */
 #life-in-zippy {
@@ -692,7 +695,7 @@ span {
 
 /* Newsletter Section */
 #newsletter {
-    margin-top: 5155px;
+    margin-top: 5115px;
     height: 390px;
     background: #000;
 }
@@ -913,8 +916,12 @@ textarea:focus {
     transition: 0.4s;
 }
 
-.send-btn:active {
+.send-btn:hover {
     opacity: 0.8;
+}
+
+.send-btn:active {
+    opacity: 0.6;
 }
 
 .footer {

@@ -1,5 +1,5 @@
 # LGMVIP-Web-Development
-Web Development Internship Task-
+Web Development Internship Task-1
 
 A single page website built using HTML, CSS and JavaScript
 

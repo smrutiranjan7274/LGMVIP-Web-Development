@@ -1,4 +1,4 @@
-# Lets-Grow-More-Internship-Tasks
+# LGMVIP-Web-Development
 Web Development Internship Tasks
 
 Task-1: Create a single page website using HTML, CSS and JavaScript (Website Link:https://srblgmvipt1.netlify.app)
